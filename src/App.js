@@ -45,7 +45,7 @@ class App extends React.Component {
 
     this.db
       .collection('products')
-      .onSnapshot((snapshot) => {       //onsnapshot is fird automatically whenever change is made in database
+      .onSnapshot((snapshot) => {       //onsnapshot is fired automatically whenever change is made in database
         console.log(snapshot);
 
         snapshot.docs.map((doc) => {
